@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view />
+
+<h:head>
+	<title>JSF 2.0: Sample Application</title>
+</h:head>
+
+<h:body>
+NewbPostman
+<!-- 	<h:form id="simpleForm">
+
+		<h2>JSF 2.0: Sample Application</h2>
+
+		<p>Bean Scopes:</p>
+		<ul>
+			<li>Application: #{applicantController}</li>
+			<li>Session: #{viewProperties}</li>
+			<li>View: #{jobApplicant}</li>
+			<li>Request: #{requestTest}</li>
+		</ul>
+
+		<p>
+			Server Name: #{request.serverName}<br /> Context Path:
+			#{request.contextPath}<br /> Servlet Path: #{request.servletPath}<br />
+			Server Port: #{request.serverPort}<br /> Request Method:
+			#{request.method}<br /> Server Info: #{application.serverInfo}<br />
+			Session ID: #{session.id}<br />
+		</p>
+
+		<h:commandButton value="Submit" />
+		<br />
+		<br /> -->
+	<form>
+		<p:tabMenu id="tabMenu" activeIndex="#{tabMenuManagedBean.index}">
+			<p:menuitem value="GET Request"
+				url="https://www.journaldev.com/dev/primefaces"></p:menuitem>
+			<p:menuitem value="Ajax Request"
+				action="#{tabMenuManagedBean.doSomeWork}" update="tabMenu message"></p:menuitem>
+			<p:tab title="Tab#1" closable="true">
+				<p:outputLabel value="messageNum1"></p:outputLabel>
+			</p:tab>
+			<p:tab title="Tab#2" closable="true">
+				<p:outputLabel value="messageNum2"></p:outputLabel>
+			</p:tab>
+		</p:tabMenu>
+	</form>
+	<!-- 	</h:form> -->
+
+</h:body>
+
+</html>
