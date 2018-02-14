@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+   <class name="com.pranav.hbm.dao.Employee" table="emp">
+      <meta attribute="class-description">
+         This class contains the Employee details. 
+      </meta>
+      <id name="employeeNumber" type="int" column="EMPNO" />
+      <property name="employeeName" column="ENAME" type="string"/>
+      <!-- <property name="job" column="JOB" type="string"/>
+      <property name="mgr" column="MGR" type="int"/>
+      <property name="hireDate" column="HIREDATE" type="date"/>
+      <property name="salary" column="SAL" type="float"/>
+      <property name="commission" column="COMM" type="float"/> -->
+      <!-- <property name="vehicleName" column="DEPTNO" type="number"/> -->
+   </class>
+</hibernate-mapping>
